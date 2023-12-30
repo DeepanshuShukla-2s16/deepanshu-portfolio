@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- favi icon -->
+    <link rel="icon" type="image/svg" href="./images/" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      />
+
+    <!-- external file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive-style.css" />
+
+    <title>Potfolio</title>
+  </head>
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75"  onload="typeText()">
+    <!-- navbar section -->
+    <div class="header-wrapper">
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#home">
+            <img src="images/logo_red.png" class="img-fluid img-red-logo">
+            <img src="images/logo_aqua.png" class="img-fluid img-aqua-logo d-none">
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav menu-navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#potfolio">Potfolio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+
+              <li class="nav-item mt-2 mt-lg-0">
+                <a class="main-btn hire-me-btn" href="#contact">Hire Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- banner -->
+    <section id="home" class="banner-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center text-md-start ">
+              <h6>Welcome to My Portfolio!</h6>        
+            <h1>Hi,
+              <span id="blink" class="text-start">I'm Deepanshu Shukla</span> 
+              <br />
+              <span>Java Full Stack Developer.</span>
+              <br />
+              based in India.
+            </h1>
+            <div class="welcome" style="max-width: 680px;">
+              <h3>I am Fresher Java Full Stack Developer with a passion for crafting innovative and robust web applications. I am excited about the possibilities that technology brings and am eager to contribute my skills to dynamic projects that make a real impact.</h6>
+            </div>
+
+              
+
+            <div class="mt-4">
+              <a href="resume/Deepanshu Shukla's Resume.pdf" target="_blank" class="main-btn">Download CV</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section -->
+    <section id="about" class="about-wrapper blur-prop">
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-4 mb-3 mb-lg-0">
+            <img
+              src="images/about_img.jpg"
+              alt="about"
+              class="img-fluid rounded-3 pics"
+            />
+          </div>
+          <div class="col-lg-8 ps-lg-5 text-center text-lg-start">
+            <div class="my-3 mb-lg-0">
+              <!-- <span class="subtitle">My About Details</span> -->
+              <h2>About me</h2>
+              <span></span>
+              <p>
+                Hello there! I'm Deepanshu Shukla, a recent graduate with a degree in Bachelor of Computer Application and am excited to kickstart my Journey in the world of web development. My journey began with a curiosity for problem-solving and a love for creating intuitive, user-friendly applications.
+                I'm looking forward to gaining  real-world experience and expanding my skills in dynamic field. Open to new opportunity and collaborations.
+              </p>
+            </div>
+            <div class="pt-3">
+              <ul
+                class="nav nav-pills justify-content-center justify-content-between mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active"
+                    id="pills-skill-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-skill"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-skill"
+                    aria-selected="true"
+                  >
+                  Why java?
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-award-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-award"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-award"
+                    aria-selected="false"
+                  >
+                  
+                  Journey into Tech
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-education-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-education"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-education"
+                    aria-selected="false"
+                  >
+                    Education
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="pills-experiance-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-experiance"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-experiance"
+                    aria-selected="false"
+                  >
+                  Certificates
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-skill"
+                  role="tabpanel"
+                  aria-labelledby="pills-skill-tab"
+                >
+                <h3>
+                  From the start of my academic career, I've immersed myself in the world of Java programming, exploring front-end technologies, learning how to create the visible and interactive parts of websites and applications. And learned the intricacies of database management. This journey is not just about code for me; it's about crafting seamless and impactful digital experiences.
+                </h3>
+              </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-award"
+                  role="tabpanel"
+                  aria-labelledby="pills-award-tab"
+                >
+                  <h3>
+                    From the start of my academic career, I've immersed myself in the world of Java programming, exploring front-end technologies, learning how to create the visible and interactive parts of websites and applications. And learned the intricacies of database management. This journey is not just about code for me; it's about crafting seamless and impactful digital experiences.
+                  </h3>
+                </div>
+                <div
+                class="tab-pane fade"
+                id="pills-education"
+                role="tabpanel"
+                aria-labelledby="pills-education-tab"
+              >
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="#"
+                      >Master Of Computer Application<span
+                        >-JS University
+                      </span></a
+                    >2023-current
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Bachelor Of Computer Application<span
+                        >-Allahabad State University
+                      </span></a
+                    >2023
+                  </li>
+                  <li>
+                    <a href="#">Intermediate<span>- SKMIC college </span></a
+                    >2020
+                  </li>
+                  <li>
+                    <a href="#">High School<span>- SKMIC college </span></a
+                    >2018
+                  </li>
+                </ul>
+              </div>
+              <div
+              class="tab-pane fade"
+              id="pills-education"
+              role="tabpanel"
+              aria-labelledby="pills-education-tab"
+            >
+              <ul class="text-start ps-0">
+                <li>
+                  <a href="#"
+                    >Master Of Computer Application<span
+                      >-JS University
+                    </span></a
+                  >2023-current
+                </li>
+                <li>
+                  <a href="#"
+                    >Bachelor Of Computer Application<span
+                      >-Allahabad State University
+                    </span></a
+                  >2023
+                </li>
+                <li>
+                  <a href="#">Intermediate<span>- SKMIC college </span></a
+                  >2020
+                </li>
+                <li>
+                  <a href="#">High School<span>- SKMIC college </span></a
+                  >2018
+                </li>
+              </ul>
+            </div>
+                <div
+                class="tab-pane fade"
+                id="pills-experiance"
+                role="tabpanel"
+                aria-labelledby="pills-experiance-tab"
+              >
+                <ul class="text-start ps-0">
+                  <li>
+                    <a href="#"
+                      >Java Full Stack Developer Training<span
+                        >-Ducat (The IT training School), sector-63, Noida
+                      </span></a
+                    >May-2023 to Nov-2023
+                  </li>
+                  <li>
+                    <a href="#"
+                      >Java Internship<span
+                        >-Octanet
+                      </span></a
+                    >Oct-2023 to Nov-2023
+                  </li>
+                  
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section -->
+    <section id="skills" class="skills-wrapper blur-propr">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center mb-4">
+            <span class="subtitle">What am I learning.</span>
+            <h2>My all technical skills</h2>
+            <p>
+              I am constantly exploring new technologies and expanding my skill set. Currently, I am focusing on:
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/c_language.png" alt="C Language Image" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">C Language</h3>
+                <p>C is not just a language for me; it's a tool that I use to bring ideas to life and solve real-world challenges. It holds a special place in my journey in IT as it was my first programming language.Starting with C, I build the foundation for my understanding of programming concepts.With this language, I wrote my first lines of code, I not only learned the syntax of programming but also cultivated a logical mindset and also honed my problem-solving skills</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/html_5.png" alt="html image" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">HTML 5</h3>
+                <p>As a web developer, HTML is the foundation of my work. I have a strong command of HTML5, including semantic markup and accessibility best practices. Over the years, I have created responsive and user-friendly web pages using HTML in conjunction with CSS and JavaScript.Continuously learning and staying updated with the latest HTML specifications and best practices is a priority for me.</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/css_3.png" alt="css image" class="img-fluid m-4"/>
+                </div>
+                <h3 class="mt-2">CSS 3</h3>
+                <p>My expertise in CSS extends to crafting visually appealing and responsive user interfaces. I have a deep understanding of CSS3 features, utilizing them to create designs that enhance user experience.Implementing responsive design principles using media queries for optimal viewing on various devices.</p>
+              </div>
+            </div>         
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/js.png" alt="JavaScript image" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">JavaScript</h3>
+                <p>JavaScript plays a vital role in my development toolkit, empowering me to build dynamic and interactive web applications. With a strong proficiency in JavaScript, I create robust and efficient client-side functionality.</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/java.png" alt="Java" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">Java</h3>
+                <p>Java is a versatile and powerful programming language that I proficiently use for building robust, scalable, and platform-independent applications. My experience with Java extends to both backend development and enterprise-level solutions. My commitment to writing clean, maintainable code and adhering to best practices in Java development ensures the reliability and scalability of the applications I contribute to.</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/jdbc.jpeg" alt="JDBC Image" class="img-fluid m-2 mw-100"/>
+                </div>
+                <h3 class="mt-2">JDBC</h3>
+                <p>My proficiency in JDBC enables me to connect Java applications to relational databases. I have hands-on experience leveraging JDBC to create robust and scalable database-driven solutions.Designing and implementing data entry forms and processes for adding new records to databases.</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/hibernate.png" alt="hibernate Image" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">Hibernate</h3>
+                <p>My proficiency in Hibernate empowers me to seamlessly perform CRUD operations, facilitating efficient interaction between Java applications and relational databases. With hands-on experience in leveraging Hibernate, I create robust and scalable database-driven solutions with an object-oriented approach.Mapping Java objects to database entities and persisting new records with Hibernate's session API.My approach to CRUD operations with Hibernate involves ensuring the alignment of object-oriented models with relational databases</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/jsp_servlet.jpg" alt="JSP & Servlet Image" class="img-fluid m-2"/>
+                </div>
+                <h3 class="mt-2">Servlet & JSP</h3>
+                <p>As a developer in the early stages of learning, I am currently gaining proficiency in JSP and Servlet development, exploring the foundations of creating dynamic and interactive web applications in Java.</p>
+              </div>
+            </div>            
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body text-md-start text-center">
+                <div class="card-img text-center">
+                  <img src="./images/skills_images/spring.png" alt="JSP & Servlet Image" class="img-fluid m-2 mw-100"/>
+                </div>
+                <h3 class="mt-2">Sring Framework</h3>
+                <p>My proficiency in the Spring Framework allows me to develop robust, scalable, and maintainable Java applications. As a versatile framework, Spring plays a crucial role in simplifying the complexities of enterprise-level development and promoting best practices across various architectural layers.Utilizing IoC (Inversion of Control) and Dependency Injection for loose coupling and easier testing. Designing and developing web applications with the Model-View-Controller pattern for a structured architecture.</p>
+              
+              </div>
+            </div>            
+          </div>
+      </div>
+    </section>
+
+<!-- potfolio section -->
+
+<!-- contact section -->
+    <section id="contact" class="contact-wrapper blur-prop">
+      <div class="container md-container-fluid">
+        <div class="row justify-content-between align-items-center">
+          <div class="col-lg-8 order-2 order-lg-1 pe-lg-5 text-lg-start text-center">
+            <!-- <span class="subtitle">My complete project</span> -->
+            <h2>Hire me</h2>
+            <div class="row call_details mb-3">
+              <label class="col-lg-4 col-sm-4  mb-1" >Call us directly</label>
+              <div class=" col-lg-8 col-sm-8 mb-3 mb-lg-2 text-md-start">
+                <a href="javascript:void(0)">+91 7238066207</a>
+              </div>
+              <label class="col-lg-4 col-sm-4 mb-1">Contact Email:</label>
+              <div class="col-lg-8 col-sm-8  mb-3 mb-lg-2 text-md-start">
+                <a href="mailto:deepanshushukla571@gmail.com">deepanshushukla571@gmail.com</a>
+              </div>
+            </div>
+            <form action="">
+              <div class="mb-4">
+                <input type="text" class="form-control" placeholder="Your Name...." autocomplete="off">
+              </div>
+              <div class="mb-4">
+                <input type="number" class="form-control" placeholder="Your Phone...." autocomplete="off">
+              </div>
+              <div class="mb-4">
+                <input type="email" class="form-control" placeholder="Your Email...." autocomplete="off">
+              </div>
+              <div class="mb-4">
+                <textarea cols="40" rows="4" class="form-control" id="message">
+                </textarea>
+              </div>
+              <button type="submit" class="main-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-lg-4 order-1 mb-4 order-lg-2 mb-lg-0">
+            <img src="./images/contact_img.jpg" alt="my pic" class="img-fluid pics">
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- footer section -->
+      <section class="footer-wrapper mt-3 mt-md-0 ">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-6 text-center text-md-start">
+              <div class="footer-logo mb-3 mb-md-0">
+                <a href="#home">
+                  <img src="./images/logo_aqua.png" class="img-fluid text-center footer-logo" alt="logo">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <ul class="list-unstyled d-flex justify-content-center justify-content-md-end justify-content-lg-center social-icon mb-3 mb-md-0">
+                <li>
+                  <a href="https://www.linkedin.com/in/deepanshu-shukla-4s16/" ><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="https://github.com/DeepanshuShukla-2s16"><i class="fa-brands fa-github"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="copyright-text text-lg-start text-center mb-3 mb-lg-0">
+                <p class="mb-0"> Copyright &copy; 2023 <a href="#">Deepanshu Shukla</a>. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+
+
+    <script src="js/main.js"></script>
+
+    <!-- bootstarp js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
