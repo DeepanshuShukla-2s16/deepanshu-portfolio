@@ -155,7 +155,7 @@
     }
     .contact-wrapper .contact_inner_pic{
         display: block;
-        background-image: url(../images/contact_img.jpg);
+        background-image: url(../images/contact_img.png);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
