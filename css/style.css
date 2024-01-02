@@ -129,7 +129,9 @@ h6{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
-
+.hide{
+    display: none;
+}
 p{
 
     color: var(--text-aqua);
@@ -254,10 +256,10 @@ button{
 /* about section */
 .nav-pills{
     border: 1px solid var(--text-aqua);
-    border-radius: 50px;
+    border-radius: 20px;
 }
 .about-wrapper ul li .nav-link{
-border-radius: 50px;
+border-radius: 20px;
 font-size: 15px;
 font-weight: 500;
 transition: all 0.5s cubic-bezier(0,0,0.2,1);
@@ -270,12 +272,25 @@ border: 0;
 background-color: var(--primary-color);
 color: var(--bg-white);
 }
-.about-wrapper .tab-pane p{
-    font-size: 14px;
-    color: var(--gray-color);
+.about-wrapper .tab-pane h3{
+    font-size: 15px;
+    color: var(--bg-white);
     margin-bottom: 13px;
     font-weight: 300;
     list-style: none;
+}
+
+.about-wrapper .about_pic,.contact-wrapper .contact_pic{
+    height: auto;
+    min-height: 530px;
+    background-image: url(../images/about_img.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+.contact-wrapper .contact_pic{
+    background-image: url(../images/contact_img.png);
 }
 .about-wrapper .tab-pane li{
     font-size: 14px;
@@ -299,13 +314,14 @@ color: var(--bg-white);
     cursor: pointer;
     transition: transform .7s cubic-bezier(0.5,.2,.1,1),
      box-shadow 0.7s cubic-bezier(.05,.2,.1,1);
-     max-height: 400px;
+     height: 400px;
      overflow: scroll;
 }
 .skills-wrapper .card:hover{
     box-shadow: 0px 0px 30px 1px rgba(45,73,133,1);
     transform: translateY(-5px);
 }
+
 .skills-wrapper .card-img{
     background-color: var(--bg-white);
     max-height: 180px;
@@ -337,7 +353,7 @@ color: var(--bg-white);
    border: 2px solid var(--text-aqua);
    border-radius: 50%;
    text-align: center;
-   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .portfolio-wrapper .card .project-link:hover{
     background-color: var(--primary-color);
@@ -366,7 +382,7 @@ color: var(--bg-white);
     bottom: 35px;
     right: 10px;
     opacity: 0;
-    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all .3s linear;
     font-size: 12px;
   }
 
@@ -419,7 +435,7 @@ color: var(--bg-white);
    border: 2px solid var(--text-aqua);
    border-radius: 50%;
    text-align: center;
-   transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+   transition: all .2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .footer-wrapper .social-icon a:hover{
     background-color: var(--primary-color);
