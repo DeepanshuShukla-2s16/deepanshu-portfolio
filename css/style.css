@@ -20,7 +20,7 @@
     --text-aqua: #27a4aa;    
     --text-white:#bfe4f1;  
 
-    --gray-color: #524f4f;  
+    --gray-color: #979797;  
 
     --gradient-text: linear-gradient(-224deg, var(--primary-color) 0, #ff6333 40%,#fffc33 70%);    
     --gradient-color: linear-gradient(-224deg, var(--primary-color) 0, #337DFF 100%);  
@@ -304,6 +304,10 @@ color: var(--bg-white);
     font-weight: 600;
     display: block;
     color: var(--text-aqua);
+}
+.about-wrapper .tab-pane li a span{
+    color:var(--bg-white);
+    font-size: 14px;
 }
 /* skills */
 .skills-wrapper .card::-webkit-scrollbar{
