@@ -33,7 +33,7 @@ function typeText(){
     document.getElementById('blink').innerHTML =  document.getElementById('blink').innerHTML + txt_arr[index];
     if(index < txt_arr.length-1){
         index++;
-        setTimeout("typeText()",150);
+        setTimeout("typeText()",250);
     }
     else if(index=== txt_arr.length-1){
         setTimeout("typeText()",2000);
